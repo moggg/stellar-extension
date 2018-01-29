@@ -1,5 +1,4 @@
 // Saves input from options page to localStorage
-
 function save_data() {
   // Get the selected value of the currency dropdown
   var e = document.getElementById("currency");

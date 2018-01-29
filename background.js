@@ -1,5 +1,4 @@
-// Keep the extension icon update
-
+// Keep the extension icon updated
 function updateicon() {
   var icon = "N/A";
   var tooltip = "N/A";
