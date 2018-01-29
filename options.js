@@ -1,4 +1,3 @@
-
 // Saves input from options page to localStorage
 
 function save_data() {
@@ -12,7 +11,7 @@ function save_data() {
 
   // If the save button is clicked, display a message
   if (optionsApplied) {
-    status.innerHTML = "Currency saved";
+    $("#status").show().delay(3000).fadeOut();
   }
 }
 

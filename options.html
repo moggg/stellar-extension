@@ -1,46 +1,65 @@
 <html>
-<head><title>XLM Tracker</title></head>
+<head>
+  <title>XLM Tracker</title>
+    <link rel="stylesheet" href="css/spectre.css">
+    <style>
+      body {
+        background: #454d5d;
+        color: #fff;
+      }
+      #status {
+        display:none;
+      }
+    </style>
+</head>
 
 <body>
+  <div class="row">
+    <div class="text-center">
+      <h2>Currency:</h2>
+      <div class="form-group">
+        <select class="form-select" id="currency">
+          <option value="aud">AUD</option>
+          <option value="brl">BRL</option>
+          <option value="cad">CAD</option>
+          <option value="chf">CHF</option>
+          <option value="clp">CLP</option>
+          <option value="cny">CNY</option>
+          <option value="czk">CZK</option>
+          <option value="dkk">DKK</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+          <option value="hkd">HKD</option>
+          <option value="huf">HUF</option>
+          <option value="idr">IDR</option>
+          <option value="ils">ILS</option>
+          <option value="inr">INR</option>
+          <option value="jpy">JPY</option>
+          <option value="krw">KRW</option>
+          <option value="mxn">MXN</option>
+          <option value="myr">MKR</option>
+          <option value="nok">NOK</option>
+          <option value="nzd">NZD</option>
+          <option value="php">PHP</option>
+          <option value="pkr">PKR</option>
+          <option value="pln">PLN</option>
+          <option value="rub">RUB</option>
+          <option value="sek">SEK</option>
+          <option value="sgd">SGD</option>
+          <option value="thb">THB</option>
+          <option value="try">TRY</option>
+          <option value="twd">TWD</option>
+          <option value="zar">ZAR</option>
+          </select>
+        </div>
 
-<h2>Currency:</h2>
-<select id="currency">
-  <option value="aud">AUD</option>
-  <option value="brl">BRL</option>
-  <option value="cad">CAD</option>
-  <option value="chf">CHF</option>
-  <option value="clp">CLP</option>
-  <option value="cny">CNY</option>
-  <option value="czk">CZK</option>
-  <option value="dkk">DKK</option>
-  <option value="eur">EUR</option>
-  <option value="gbp">GBP</option>
-  <option value="hkd">HKD</option>
-  <option value="huf">HUF</option>
-  <option value="idr">IDR</option>
-  <option value="ils">ILS</option>
-  <option value="inr">INR</option>
-  <option value="jpy">JPY</option>
-  <option value="krw">KRW</option>
-  <option value="mxn">MXN</option>
-  <option value="myr">MKR</option>
-  <option value="nok">NOK</option>
-  <option value="nzd">NZD</option>
-  <option value="php">PHP</option>
-  <option value="pkr">PKR</option>
-  <option value="pln">PLN</option>
-  <option value="rub">RUB</option>
-  <option value="sek">SEK</option>
-  <option value="sgd">SGD</option>
-  <option value="thb">THB</option>
-  <option value="try">TRY</option>
-  <option value="twd">TWD</option>
-  <option value="zar">ZAR</option>
-</select>
+        <span class="text-success">
+          <div id="status">Shit's saved yo</div>
+        </span>
 
-<br/>
-<div id="status"></div>
-<button id="save">Save</button>
+        <button class="btn btn-success" id="save">Save</button>
+    </div>
+  </div>
 </body>
 
 <script src="options.js"></script>

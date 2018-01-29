@@ -2,7 +2,7 @@
   "manifest_version":2,
   "name":"Stellar (XLM) Price Tracker",
   "short_name": "Stellar (XLM) Tracker",
-  "description":"Price tracker for Stellar (XLM) - gathers price data from coinmarketcap.com",
+  "description":"Price tracker for Stellar (XLM) - gathers price data using the coinmarketcap API",
   "options_page": "options.html",
   "version":"1.0",
   "background":{
