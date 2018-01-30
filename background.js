@@ -6,7 +6,7 @@ function updateicon() {
   var query = "https://api.coinmarketcap.com/v1/ticker/stellar/?convert=".concat(localStorage['currency']);
   var price = "price_".concat(localStorage['currency']);
 
-  // Default to currency to usd if localStorage hasn't been set
+// Default to currency to usd if localStorage hasn't been set
   if (!currency) {
     localStorage['currency'] = 'usd';
   }
@@ -25,8 +25,8 @@ function updateicon() {
   )
 }
 
-// Update the icon every 10 minutes (public API rules)
-setInterval(updateicon,600000);
+// Update the icon every minutes (public API rules)
+setInterval(updateicon,60000);
 updateicon();
 
 chrome.browserAction.onClicked.addListener(function(tab) {

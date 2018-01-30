@@ -8,7 +8,7 @@ function save_data() {
 
   localStorage['currency'] = value;
 
-  // If the save button is clicked, display a message
+// If the save button is clicked, display a message
   if (optionsApplied) {
     $("#status").show().delay(3000).fadeOut();
   }
